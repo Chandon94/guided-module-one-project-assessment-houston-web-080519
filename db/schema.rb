@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 3) do
   end
 
   create_table "subscriptions", force: :cascade do |t|
-    t.string "user_id"
-    t.string "anime_id"
+    t.integer "user_id"
+    t.integer "anime_id"
     t.integer "price"
   end
 
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 3) do
     t.string "name"
     t.integer "age"
     t.string "email"
+    t.string "password"
   end
 
 end
